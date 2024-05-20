@@ -113,7 +113,8 @@ def bar_plot():
                 poblacion.append(int(line['poblacion']))
 
     fig = plt.figure()
-    fig.suptitle('Población histórica mundial', fontsize=16, label='poblacion')
+    fig.suptitle('Población histórica mundial', fontsize=16, \
+                    label='poblacion')
     ax = fig.add_subplot()
 
     ax.bar(years, poblacion)
